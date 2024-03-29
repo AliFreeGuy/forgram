@@ -31,10 +31,18 @@
 - ادمین پنل حرفه‌ای توسعه یافته با جنگو
 <br>
 
-<div style="display: flex;">
-    <img src="images/demo1.jpg" width="200" style="margin-right: 10px;">
-    <div style="width: 25px;"></div> <!-- فاصله بین دو عکس -->
-    <img src="images/demo2.jpg" width="200" style="margin-left: 10px;">
+<div dir="rtl" style="text-align: right;">
+    <table>
+        <tr>
+            <td>
+                <img src="images/demo1.jpg" width="200">
+            </td>
+            <td style="width: 25px;"></td> <!-- فاصله بین دو عکس -->
+            <td>
+                <img src="images/demo2.jpg" width="200">
+            </td>
+        </tr>
+    </table>
 </div>
 
 
@@ -45,8 +53,8 @@
 <br>
 
 
-[![me](https://img.shields.io/badge/contact_me-1DA1F2?style=for-the-badge&logo=telegram&logoColor=white)](https://twitter.com/)
-[![forgram_bot](https://img.shields.io/badge/forgram_bot-1DA1F2?style=for-the-badge&logo=telegram&logoColor=white)](https://twitter.com/)
+[![me](https://img.shields.io/badge/contact_me-1DA1F2?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/accroot)
+[![forgram_bot](https://img.shields.io/badge/forgram_bot-1DA1F2?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/forgram_bot)
 
 
 
