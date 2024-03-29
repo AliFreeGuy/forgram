@@ -1,0 +1,65 @@
+services:
+  redis:
+    image: "redis"
+    container_name: rd
+    networks:
+      - forgram_network
+    ports:
+      - "6379:6379"
+
+
+
+  web:
+    container_name: web
+    build:
+      context: .
+      dockerfile: Dockerfile.web
+    networks:
+      - forgram_network
+    depends_on:
+      - redis
+    ports:
+      - "5555:5555"
+
+
+
+  bot:
+    container_name: bot
+    
+    build:
+      context: .
+      dockerfile: Dockerfile.forgram_bot
+    networks:
+      - forgram_network
+    depends_on:
+      - redis
+
+
+
+
+  web_tasks:
+    container_name: 'web_tasks'
+    build:
+      context: .
+      dockerfile: Dockerfile.web_tasks
+    networks:
+      - forgram_network
+    depends_on:
+      - redis
+
+
+
+
+  bot_tasks:
+    container_name: 'bot_tasks'
+    build: 
+      context: .
+      dockerfile: Dockerfile.forgram_tasks
+    networks:
+      - forgram_network
+    depends_on:
+      - redis
+
+
+networks:
+  forgram_network:
